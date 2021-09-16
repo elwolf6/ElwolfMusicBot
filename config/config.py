@@ -1,3 +1,5 @@
+import os
+
 BOT_TOKEN: str = os.getenv('DISCORD_TOKEN')
 SPOTIFY_ID: str = ""
 SPOTIFY_SECRET: str = ""
