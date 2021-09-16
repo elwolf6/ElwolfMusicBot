@@ -1,0 +1,7 @@
+discord.py[voice]
+discord-py-interactions
+youtube-dl
+aiohttp
+asyncio
+beautifulsoup4
+spotipy
