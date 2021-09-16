@@ -1,4 +1,4 @@
-BOT_TOKEN: str = os.environ.get("DISCORD_TOKEN")
+BOT_TOKEN: str = os.getenv('DISCORD_TOKEN')
 SPOTIFY_ID: str = ""
 SPOTIFY_SECRET: str = ""
 
