@@ -10,7 +10,7 @@ from musicbot import utils
 from musicbot.audiocontroller import AudioController
 from musicbot.utils import guild_to_audiocontroller, guild_to_settings
 
-guild_ids=[888108368928071780]
+guild_ids=[246861284069343234]
 
 class General(commands.Cog):
     """ A collection of the commands for moving the bot around in you server.
