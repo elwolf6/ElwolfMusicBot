@@ -13,7 +13,7 @@ from musicbot.commands.general import General
 
 import datetime
 
-guild_ids=[888108368928071780]
+guild_ids=[246861284069343234]
 
 class Music(commands.Cog):
     """ A collection of the commands related to music playback.
