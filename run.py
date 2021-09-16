@@ -60,5 +60,5 @@ async def register(guild):
     vc_channels = guild.voice_channels
     await guild.me.edit(nick=guild_to_settings[guild].get('default_nickname'))
 
-
+keep_alive.keep_alive()
 bot.run(config.BOT_TOKEN, bot=True, reconnect=True)
