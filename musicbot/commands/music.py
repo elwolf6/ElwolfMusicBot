@@ -4,6 +4,8 @@ from discord.ext import commands
 import asyncio
 
 from discord_slash import cog_ext, SlashContext
+from discord_slash.utils.manage_commands import create_permission
+from discord_slash.model import SlashCommandPermissionType
 
 from musicbot import utils
 from musicbot import linkutils
@@ -173,6 +175,10 @@ class Music(commands.Cog):
 
     #@commands.command(name='skip', description=config.HELP_SKIP_SHORT, help=config.HELP_SKIP_SHORT, aliases=['s'])
     @cog_ext.cog_slash(name="skip", description=config.HELP_SKIP_SHORT, guild_ids=guild_ids)
+    @cog_ext.cog_slash.permission(guild_id=246861284069343234,
+                  permissions=[
+                    create_permission(500863852372688907, SlashCommandPermissionType.ROLE, True),
+                  ])
     async def _skip(self,ctx: SlashContext):
         current_guild = ctx.guild
 
